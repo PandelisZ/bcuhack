@@ -25,7 +25,7 @@ app.get('/', function(req, res){
 
 app.get('/api/haveyoutweetedthislinkyet', function(req, res){
   if(req.query.ping != null){
-    res.statusCode = 400;
+    res.statusCode = 200;
     res.send('All good bud.')
   }else {
     res.send('This endpoint doesnt do much else')
