@@ -114,7 +114,26 @@ app.get('/api/getbusiness', function(req,res){
         });
   },4000)
 
+});
 
+app.post('/api/getbusiness', function(req,res){
+
+  var lat = req.query.lat;
+  var lng = req.query.lng;
+
+  var location = lat +','+lng
+
+  addGoogletoQueue(location, function(data){
+
+  });
+
+  setTimeout(function(){
+    queueDb.
+        find().
+        exec(function(err, data){
+          res.json(data);
+        });
+  },4000)
 
 });
 
