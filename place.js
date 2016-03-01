@@ -3,9 +3,10 @@ request = require('request');
 module.exports.search = function(data, callback){
 
   get = {
-      "key": "AIzaSyDA5DX-cT2GxcDlUFqGwmOk8tweI0MjvZQ",
+      //"key": "AIzaSyDA5DX-cT2GxcDlUFqGwmOk8tweI0MjvZQ",
       //"key": "AIzaSyA-f0suDaAIa-PW3tSvRtIovE4LXkHM5Jw",
       // "key": "AIzaSyDoNuexkcgTIzOefht633bhW40h5CfOHOk",
+      "key": "AIzaSyC0QBQCabc5o29ldQ5FqC6VzmFfv8UlTnk",
       "location": '52.482982,-1.8855607',
       "radius": 1500,
     }
@@ -53,9 +54,10 @@ module.exports.search = function(data, callback){
 module.exports.business  = function(data, callback){
 
   get = {
-    "key": "AIzaSyDA5DX-cT2GxcDlUFqGwmOk8tweI0MjvZQ",
+    //"key": "AIzaSyDA5DX-cT2GxcDlUFqGwmOk8tweI0MjvZQ",
       //"key": "AIzaSyA-f0suDaAIa-PW3tSvRtIovE4LXkHM5Jw",
       // "key": "AIzaSyDoNuexkcgTIzOefht633bhW40h5CfOHOk",
+      "key": "AIzaSyC0QBQCabc5o29ldQ5FqC6VzmFfv8UlTnk",
       "placeid": "ChIJN1t_tDeuEmsRUsoyG83frY4"
     }
 
