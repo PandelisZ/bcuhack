@@ -76,7 +76,7 @@ function addGoogletoQueue(location, callback) {
               queue.name = data[1].name;
               queue.street = data[1].vicinity;
               queue.website = data[1].website;
-              queue.rating = 'TomIsTooLazyToCtrl+F Replace';
+              queue.rating = 50;
               queue.geo = {'lat': data[1].geometry.location.lat, 'lng': data[1].geometry.location.lng};
               queue.majestic = majesticData;
               queue.save(function(err, data){

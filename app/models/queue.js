@@ -5,7 +5,7 @@ var queueSchema = new Schema({
 	name: String,
 	street: String,
 	website: String,
-	rating: String,
+	rating: Number,
 	geo: {
 		lat: Number,
 		lng: Number
