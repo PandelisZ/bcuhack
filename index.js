@@ -103,12 +103,18 @@ app.get('/api/getbusiness', function(req,res){
   var location = lat +','+lng
 
   addGoogletoQueue(location, function(data){
+
+  });
+
+  setTimeout(function(){
     queueDb.
         find().
         exec(function(err, data){
           res.json(data);
         });
-  });
+  },4000)
+
+
 
 });
 
